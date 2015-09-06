@@ -10,7 +10,7 @@ markdown学习
 
 ###总体流量OD
 - 计算OD总体流量（num,insation,inroad,station,road）
-···
+>
 	SELECT
 		count(*),
 		201407_1.InStationNo,
@@ -34,7 +34,7 @@ markdown学习
 		201407_1.InRoadNo,
 	  201407_1.StationNo,
 	  201407_1.RoadNo
-···
+
  
 -  对收费站流量整合站id（num,insation,inroad,station,road）合并收费站的id得到（num,insation,inroad,station,road,inid,outid）
 >	
@@ -44,4 +44,8 @@ markdown学习
 	LEFT JOIN  `收费站1` as t3
 	on t1.StationNo  = t3.stationno AND t1.RoadNo = t3.station_roadno
 
-- 
+以上生成csv
+
+-  利用matlab导入csv计算
+	1. 分析每个D的来源
+	2. 对每个D，按0流量排序作图
