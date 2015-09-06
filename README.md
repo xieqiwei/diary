@@ -4,11 +4,13 @@
 
 markdown学习
 
+招行在线测试10选+10问答
+
 ##收费数据
 
 ###总体流量OD
 - 计算OD总体流量（num,insation,inroad,station,road）
->
+···
 	SELECT
 		count(*),
 		201407_1.InStationNo,
@@ -32,7 +34,7 @@ markdown学习
 		201407_1.InRoadNo,
 	  201407_1.StationNo,
 	  201407_1.RoadNo
->
+···
  
 -  对收费站流量整合站id（num,insation,inroad,station,road）合并收费站的id得到（num,insation,inroad,station,road,inid,outid）
 >	
